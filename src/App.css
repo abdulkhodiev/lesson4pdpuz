@@ -1,0 +1,22 @@
+.links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.sign {
+    color: blue !important;
+    border: 1px solid blue;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+
+.footer-links1 a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.502);
+}
