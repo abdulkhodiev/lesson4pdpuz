@@ -30,6 +30,25 @@ class App extends Component {
             },
         ];
 
+        const links = [
+            {
+                text: "Features",
+                url: "#",
+            },
+            {
+                text: "Enterprise",
+                url: "#",
+            },
+            {
+                text: "Support",
+                url: "#",
+            },
+            {
+                text: "Pricing",
+                url: "#",
+            },
+        ];
+
         const footerLinks = [
             {
                 title: "Features",
@@ -59,7 +78,7 @@ class App extends Component {
 
         return (
             <div>
-                <Nav />
+                <Nav links={links} />
                 <header className="text-center">
                     <h1>Pricing</h1>
                     <p className="w-75 m-auto p-4 fs-5 text-muted">

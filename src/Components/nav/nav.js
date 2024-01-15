@@ -2,19 +2,32 @@ import React, { Component } from "react";
 
 class Nav extends Component {
     render() {
+        const { links } = this.props;
+
         return (
             <nav className="navbar p-3 shadow p-3 mb-5 bg-body rounded">
                 <div className="logo fs-5">
                     <p className="mb-0">Company Name</p>
                 </div>
                 <div className="links">
-                    <a href="/">Features</a>
-                    <a href="/">Enterprise</a>
-                    <a href="/">Support</a>
-                    <a href="/">Pricing</a>
-                    <a className="sign" href="/">
-                        Sign up
-                    </a>
+                    <ul className="list-unstyled d-flex mb-0">
+                        {links.map((link, index) => (
+                            <li key={index} className="me-3">
+                                <a
+                                    href={link.url}
+                                    className="text-decoration-none">
+                                    {link.text}
+                                </a>
+                            </li>
+                        ))}
+                        <li>
+                            <a
+                                href="#"
+                                className="text-decoration-none text-primary border border-primary rounded p-2">
+                                Sign In
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         );

@@ -19,7 +19,11 @@ class Card extends Component {
                         </p>
                         <a
                             href="/"
-                            className="btn border-2 text-primary border-primary fw-bold">
+                            className={`${
+                                title === "Free"
+                                    ? "border-2 text-primary"
+                                    : "btn-primary text-white "
+                            } btn border-primary fw-bold`}>
                             {buttonText}
                         </a>
                     </div>
